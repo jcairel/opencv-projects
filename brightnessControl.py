@@ -51,7 +51,8 @@ while True:
 
         b_level = np.interp(L, [15, 220], [0, 100])
 
-        os.system(f"brightness {float(b_level) / 100}")
+        #os.system(f"brightness {float(b_level) / 100}")
+        print(f"brightness {float(b_level) / 100}")
 
         #sbc.set_brightness(int(b_level))
 

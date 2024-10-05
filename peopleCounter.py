@@ -18,7 +18,7 @@ class TrackableObject:
 
 
 ap = argparse.ArgumentParser()
-ap.add_argument('-v', '--video', type=str, help='path to optional input video file')
+ap.add_argument('-v', '--video', type=str, required=True, help='path to input video file')
 ap.add_argument("-c", "--confidence", type=float, default=0.4,
                 help="minimum probability to filter weak detections")
 ap.add_argument("-s", '--skipFrames', type=int, default=30,
